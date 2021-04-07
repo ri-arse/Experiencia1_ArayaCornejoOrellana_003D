@@ -5,6 +5,32 @@
     src: url(../fonts/blue-highway.ttf);
 }
 
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    div.txtimg {
+      font-size: 30px;
+    }
+  }
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    div.txtimg {
+      font-size: 10px;
+    }
+  }
+
+@media screen and (min-width: 601px) {
+    h2.h2-galery {
+      font-size: 30px;
+    }
+  }
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    h2.h2-galery {
+      font-size: 20px;
+    }
+  }
+
+
 body{
     background-image:linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)),url(../img/bg1.jpg);
     background-attachment:fixed;
@@ -71,6 +97,7 @@ body{
 li{
     list-style:none
 }
+
 
 .section-title1 {
     font-family: "Blue Highway";
@@ -143,7 +170,83 @@ hr {
 }
 
 
+.h1-galery{
+    color: rgb(231, 228, 10);
+    text-align:center; 
+    letter-spacing: 15px;
+    font-family: "Blue Highway";
+    font-size: 6vw
+    
+    }
 
+    
+    .p-galery {
+        color: rgb(240, 240, 247); 
+        letter-spacing: 3px;
+        font-family: "Blue Highway";
+        font-size: 2vw;
+        
+      }
+    
+    
+      .textOverImage{
+        
+        width:100%;
+        display:inline-block;
+        border-radius:4px;
+        margin:4px;
+        position:relative;
+        cursor:pointer;
+        overflow:hidden;
+      }
+      
+      .textOverImage > input{
+        display:none
+        ;
+      }
+      
+      .textOverImage > div,.textOverImage > h2{
+        position:absolute;
+        background-color:rgba(255,255,255,0.8);
+        bottom:20px;
+        left:4px;
+        right:4px;
+        border-radius:4px;
+        padding:8px;
+        overflow:hidden;
+        opacity:0;
+        transition:.3s;
+      }
+      
+      .textOverImage:hover > h2,.textOverImage > input:checked + h2 + div{
+        bottom:4px;
+        opacity:1;
+      }
+      
+      .textOverImage > input:checked + h2{
+        bottom:-20px;
+        opacity:0;
+      }
+      
+      .textOverImage > h2{
+        margin:0;
+      }
+    
+    
+    
+      /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+      float: left;
+      width: 33.3%;
+      padding: 5px;
+    }
+    
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
 
 
