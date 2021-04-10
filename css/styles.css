@@ -248,5 +248,52 @@ hr {
       display: table;
     }
 
+    
+    
+    @keyframes myfirst {
+      0%   {background-color:rgb(255, 255, 255); left:300px; top:0px;}
+      25%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+      50%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+      75%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+      100% {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+    }
+    
+    .f-img{
+      border-radius: 50%;
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: relative;
+      animation: myfirst 4s linear 4s infinite alternate;
+      
+  }
 
+  .img1{
+    width: 250px;
+    height: 250px;
+    border: 2px ;
+    float:right;
+    margin: 20px 0 10px 10px;
+    display: block;
+    border-radius: 50%;
+   
+  }
+  .img2{
+    width: 250px;
+    height: 250px;
+    border: 2px ;
+    border-radius: 5px;
+    float:left;
+    margin: 20px 10px 10px 0;
+    display: block;
+    border-radius: 50%;
+  }
+
+  .lala{
+    color: rgb(240, 240, 247); 
+    text-align:center; 
+    letter-spacing: 3px;
+    font-family: "Blue Highway";
+    font-size: 2vw;
+  }
 
