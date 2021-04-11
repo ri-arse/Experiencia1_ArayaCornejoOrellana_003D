@@ -95,7 +95,11 @@ body{
 }
 
 li{
-    list-style:none
+  list-style:none
+}
+
+.li-puntos{
+  list-style: circle;
 }
 
 
@@ -180,43 +184,39 @@ hr {
     }
 
     
-    .p-galery {
-        color: rgb(240, 240, 247); 
-        letter-spacing: 3px;
-        font-family: "Blue Highway";
-        font-size: 2vw;
-        
-      }
+.p-galery {
+  color: rgb(240, 240, 247); 
+  letter-spacing: 3px;
+  font-family: "Blue Highway";
+  font-size: 2vw;       
+}
     
-    
-      .textOverImage{
-        
-        width:100%;
-        display:inline-block;
-        border-radius:4px;
-        margin:4px;
-        position:relative;
-        cursor:pointer;
-        overflow:hidden;
-      }
+.textOverImage{
+  width:100%;
+  display:inline-block;
+  border-radius:4px;
+  margin:4px;
+  position:relative;
+  cursor:pointer;
+  overflow:hidden;
+}
       
-      .textOverImage > input{
-        display:none
-        ;
-      }
+.textOverImage > input{
+  display:none;
+}
       
-      .textOverImage > div,.textOverImage > h2{
-        position:absolute;
-        background-color:rgba(255,255,255,0.8);
-        bottom:20px;
-        left:4px;
-        right:4px;
-        border-radius:4px;
-        padding:8px;
-        overflow:hidden;
-        opacity:0;
-        transition:.3s;
-      }
+.textOverImage > div,.textOverImage > h2{
+  position:absolute;
+  background-color:rgba(255,255,255,0.8);
+  bottom:20px;
+  left:4px;
+  right:4px;
+  border-radius:4px;
+  padding:8px;
+  overflow:hidden;
+  opacity:0;
+  transition:.3s;
+}
       
       .textOverImage:hover > h2,.textOverImage > input:checked + h2 + div{
         bottom:4px;
@@ -251,7 +251,7 @@ hr {
     
     
     @keyframes myfirst {
-      0%   {background-color:rgb(255, 255, 255); left:300px; top:0px;}
+      0%   {background-color:rgb(255, 255, 255); left:150px; top:0px;}
       25%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
       50%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
       75%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
@@ -261,11 +261,11 @@ hr {
     .f-img{
       border-radius: 50%;
       display: block;
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       position: relative;
-      animation: myfirst 4s linear 4s infinite alternate;
-      
+      margin:auto;
+      animation: myfirst 3s linear 3s infinite alternate;    
   }
 
   .img1{
@@ -282,7 +282,6 @@ hr {
     width: 250px;
     height: 250px;
     border: 2px ;
-    border-radius: 5px;
     float:left;
     margin: 20px 10px 10px 0;
     display: block;
@@ -294,6 +293,14 @@ hr {
     text-align:center; 
     letter-spacing: 3px;
     font-family: "Blue Highway";
-    font-size: 2vw;
+    font-size: 3vw;
   }
+
+.lala2{
+    color: rgb(240, 240, 247); 
+    text-align:center; 
+    letter-spacing: 1px;
+    font-family: "Blue Highway";
+    font-size: 1rem;
+}  
 
